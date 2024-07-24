@@ -11,6 +11,7 @@ body{
     justify-content: center;
     background-color: black;
     flex-wrap: wrap;
+    padding-top: 50px;
     
 
 }
@@ -80,46 +81,48 @@ body{
 
 }
 
-
 /* navbar css */
 
 nav {
     display: flex;
     z-index: 1;
     position: relative;
-    right: 0vw;
     top: 1px;
+    left: 0px;
     position: fixed;
-    gap: 5vw;
-    height: 3vw;
-    width: 99vw;
-    background-color: rgb(151, 149, 149);
-    font-size: 1.5vw;
-    border-radius: 15px;
+    gap: 30px;
+    width: 100vw;
+    height: 60px;
+    text-align: center;
+    background-color: black;
+    font-size:30px;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 0px 20px 5px gainsboro;
+    flex-wrap: wrap;
 }
 
 #searchInput{
-    border-radius: 20px;
-    height: 2vw;
-    width: 15vw;
+    border-radius: 15px;
+    height: 30px;
+    width: 200px;
 }
 
 .nav-img {
     border-radius: 50%;
-    height: 3vw;
-    width: 3vw;
+    height: 30px;
+    width: 30px;
     position: relative;
-    top: 1=0.2vw;
-    left: 3vw;
+    top: 0.2vw;
+    /* left: 3vw; */
 }
 
 .search-button {
     border-radius: 20px;
-    height: 2.4vw;
-    width: 5vw;
-    font-size: 0.8vw;
+    height: 30px;
+    width: 80px;
+    margin-left: 10px;
+    font-size: 12px;
     color: white;
     background-color: blue;
 }
@@ -140,12 +143,13 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1vw;
+    font-size: 20px;
 }
 
 .nav-i {
     gap: 4vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -155,28 +159,46 @@ p:hover {
 }
 ul{display: none;}
 .nav-a{
-    font-size: 1.5vw;
-    color:black;
+    font-size: 25px;
+    color:white;
 }
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
 
 @media only screen and (max-width: 768px) {
     nav {
         flex-wrap: wrap;
         justify-content: center;
-        height: 5vw;
+        height: 200px;
+        font-size: 20px;
+        position: absolute;
     }
     .nav-img{
         top: 1vw;
     }
-
+    .main-x{
+        position: relative;
+        top: 100px;
+    }
+  
     .nav-in {
 
         order: 4; 
         padding: 3vw;
        
     }
+    body{
+        gap: 50px;
+    }
 
     #inputBox {
         width: 80%; 
+    }
+
+    .search-button {
+        width: 20%; 
     }
 }
